@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_snapshot"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <ImageView
+        android:id="@+id/image_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_play"/>
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_description"
+        android:layout_alignLeft="@+id/image_snapshot"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        tools:text="作者" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_snapshot"
+        android:layout_alignLeft="@+id/image_snapshot"
+        android:layout_marginTop="4dp"
+        android:textColor="#4cffffff"
+        android:textSize="14sp"
+        tools:text="视频描述" />
+
+</RelativeLayout>

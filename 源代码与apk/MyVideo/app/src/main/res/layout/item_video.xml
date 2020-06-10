@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999">
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/description"
+        android:layout_marginBottom="15dp"
+        android:text="视频作者"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:text="视频描述信息"
+        android:textColor="#b3ffffff"/>
+    <ImageView
+        android:id="@+id/play1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_play"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/likecount"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_heart"
+        android:tint="#ededed" />
+
+
+    <ImageView
+        android:id="@+id/hearts"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_hearts"
+        android:visibility="invisible"
+        android:tint="#99ff0000"/>
+
+
+    <TextView
+        android:id="@+id/likecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mess"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentRight="true"
+        android:text="2222"
+        android:textColor="#ff8c69"/>
+
+    <ImageView
+        android:id="@+id/mess"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/like"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_mess"
+        android:tint="#ededed"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_arrow"
+        android:layout_alignRight="@id/mess"
+        android:layout_below="@id/mess"
+        android:layout_marginTop="10dp"
+        android:tint="#ededed"/>
+
+    <ImageView
+        android:id="@+id/sound"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/arrow"
+        android:layout_alignRight="@id/arrow"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_sound"
+        android:tint="#ededed"/>
+
+</RelativeLayout>
